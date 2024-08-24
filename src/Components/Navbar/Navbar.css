@@ -1,0 +1,125 @@
+.navbar {
+    margin: 0px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-logo h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.links ul li {
+    color: grey;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.links ul li:hover {
+    color: #363232;
+    cursor: pointer;
+}
+
+.nav-btn button {
+    padding: 0.6rem 1rem;
+    border: none;
+    font-size: 0.6rem;
+    background: linear-gradient(to right, #074583, #3d0783);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s ease;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+    transform: scale(1.05);
+}
+
+.toggle {
+    display: none;
+}
+
+.nav-links a.active li {
+    color: #f00;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav-logo h2 {
+        margin-left: -400px;
+    }
+
+    .navbar .links,
+    .nav-btn button {
+        display: none;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 40%;
+        transition: all 0.5s ease-in-out;
+        height: 100vh;
+        background: #454553;
+        backdrop-filter: blur(10px);
+        z-index: 888;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        line-height: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        color: #fff;
+        margin-top: 50px;
+        transition: 0.5s ease;
+    }
+
+    .navbar .toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        display: block;
+        font-size: 22px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .toggle .close-icon {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .toggle .open-icon {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .navbar ul li:hover {
+        color: #363232;
+    }
+
+}

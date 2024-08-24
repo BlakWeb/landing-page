@@ -1,0 +1,63 @@
+.hero-section {
+    background-image: url('C:\Users\user\Desktop\react-landing-page\src\assets\hero-bg1.avif');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.24);
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 800px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+    color: #ffff;
+}
+
+.hero-subtitle {
+    max-width: 800px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.hero-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to left, #3d0783, #4c9ae9);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for max-width 480px */
+@media(max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
