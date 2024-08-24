@@ -161,7 +161,7 @@ a.github:hover {
 
     .footer-top-left p,
     .footer-top-left img {
-        max-width: 50px;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -173,7 +173,6 @@ a.github:hover {
     }
 
     .footer-subscribe {
-        display:block;
         padding: 10px 20px;
         font-size: 14px;
     }
