@@ -50,6 +50,9 @@
         margin-bottom: 30px;
         max-width: 90%;
     }
+    .hero-section{
+        margin-top: 40px;
+    }
 
     .hero-subtitle {
         font-size: 1rem;
