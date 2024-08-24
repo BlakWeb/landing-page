@@ -171,9 +171,15 @@ a.github:hover {
         padding: 10px;
         width: 100%;
     }
+    .footer-top-right{
+        display: block;
+    }
+    .footer-email-input img {
+        width: 12px;
+    }
 
     .footer-subscribe {
-        padding: 10px 20px;
+        padding: 8px 12px;
         font-size: 14px;
     }
 
