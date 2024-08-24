@@ -151,56 +151,98 @@ a.github:hover {
 
 @media(max-width: 480px) {
     .footer {
-        margin: 20px 20px;
-    }
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-    .footer-top {
-        flex-direction: column;
-        gap: 30px;
-    }
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
-    .footer-top-left p,
-    .footer-top-left img {
-        max-width: 100%;
-        text-align: center;
-    }
+.footer-top img {
+    max-width: 100%;
+    height: auto;
+}
 
-    .footer-email-input {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-        width: 100%;
-    }
-    .footer-top-right{
-        display: block;
-    }
-    .footer-email-input img {
-        width: 12px;
-    }
+.footer-top-left p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-    .footer-subscribe {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
+.footer-email-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
 
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+.footer-email-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
 
-    .footer-bottom-left,
-    .footer-bottom-right {
-        font-size: 14px;
-        display: column;
-    }
+.footer-subscribe {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
 
-    .footer-bottom .social-links {
-        justify-content: center;
-        gap: 10px;
-    }
+.footer-subscribe:hover {
+    background-color: #0056b3;
+}
 
-    .footer-bottom span {
-        font-size: 16px;
-    }
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.footer-bottom-left .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-left span {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-bottom-right p {
+    margin: 0;
+    font-size: 12px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.footer-bottom-right p:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
 }
