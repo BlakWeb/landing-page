@@ -89,6 +89,12 @@
         padding: 0;
         font-size: 45px;
     }
+    .gallery-title p{
+        font-size: 14px; 
+        line-height: 1.5; 
+        padding: 0 10px; 
+        text-align: center;
+    }
 
     .gallery-item {
         gap: 20px;
