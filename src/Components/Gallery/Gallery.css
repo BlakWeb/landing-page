@@ -80,12 +80,20 @@
 }
 
 @media(max-width: 480px) {
-    .gallery {
-          margin: 20px 20px;
-        gap: 40px;
-    }
 
-    .gallery-title h1 {
+    ChatGPT
+
+You said:
+Give this CSS a perfect media query of max-width of 480px
+ChatGPT said:
+ChatGPT
+Could you please share the specific CSS that you want to apply a media query to? This way, I can tailor the media query to your needs.
+
+
+
+
+
+You said:
         padding: 0;
         font-size: 45px;
     }
@@ -121,4 +129,53 @@
         width: 100%;
         font-size: 14px;
     }
+}
+ChatGPT said:
+ChatGPT
+Here’s how you can apply a media query for a max-width of 480px to your existing CSS:
+
+css
+Copy code
+@media (max-width: 480px) {
+
+    
+    .gallery-title {
+        padding: 0;
+        font-size: 32px; 
+    }
+
+    .gallery-title p {
+        font-size: 12px; 
+        line-height: 1.4; 
+        padding: 0 5px; 
+        text-align: center;
+    }
+
+    
+    .gallery-item {
+        gap: 10px; 
+        margin-bottom: 20px; 
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+
+    .gallery-overlay h3 {
+        font-size: 14px; 
+        margin-bottom: 1px;
+    }
+
+    .gallery-overlay h2 {
+        font-size: 18px; 
+        margin-bottom: 1px;
+    }
+
+    .gallery-overlay p {
+        width: 100%;
+        font-size: 12px; 
+    }
+}
 }
